@@ -1,5 +1,7 @@
-import { DataTypes } from 'sequelize';
-import { sequelize } from './index.js';
+// models/CartItem.js
+import { sequelize } from './index.js'; // import the shared instance
+import pkg from 'sequelize';
+const { DataTypes } = pkg;
 
 export const CartItem = sequelize.define('CartItem', {
   productId: {

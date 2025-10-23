@@ -1,5 +1,7 @@
-import { DataTypes } from 'sequelize';
-import { sequelize } from './index.js';
+// models/Product.js
+import { sequelize } from './index.js';  // import the Sequelize instance
+import pkg from 'sequelize';
+const { DataTypes } = pkg;
 
 export const Product = sequelize.define('Product', {
   id: {

@@ -1,5 +1,7 @@
-import { DataTypes } from 'sequelize';
-import { sequelize } from './index.js';
+// models/DeliveryOption.js
+import { sequelize } from './index.js';  // import the shared Sequelize instance
+import pkg from 'sequelize';
+const { DataTypes } = pkg;
 
 export const DeliveryOption = sequelize.define('DeliveryOption', {
   id: {
